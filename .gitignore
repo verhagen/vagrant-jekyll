@@ -1,0 +1,6 @@
+# Vagrant configuration
+.vagrant/
+*.log
+
+# Eclipse configuration
+.project
