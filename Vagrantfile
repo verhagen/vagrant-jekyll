@@ -69,8 +69,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y gcc make ruby-dev zlib1g-dev nodejs
+    apt-get install -y build-essential gcc make ruby-dev zlib1g-dev nodejs
+    gem --version
     gem update --system
+    gem --version
     gem install jekyll bundler
+    gem list
   SHELL
 end
