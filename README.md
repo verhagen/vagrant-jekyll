@@ -5,9 +5,9 @@
 
 ## Jekyll - Quick-start guide
 
-Start creating Jekyll pages, with this vagrant VM images. 
+Start creating Jekyll pages, with this vagrant VM images.
 
-Launch the vragrant box
+Launch the vagrant box
 
     $ vagrant box update
 
@@ -31,12 +31,12 @@ Launch Jekyll with the follow command
 On the host computer open in a browser http://192.168.33.10:4000/
 
 
-## Edit an already existing Jekyll GitHub pages project 
+## Edit an already existing Jekyll GitHub pages project
 
 Open the `Vagrantfile` and uncomment the line `config.vm.synced_folder` update the first
-value `~/git/project-name`, which is the directory on the host. 
+value `~/git/project-name`, which is the directory on the host.
 
-Launch the vragrant box
+Launch the vagrant box
 
     $ vagrant box update
 
@@ -57,7 +57,7 @@ Check if there is a `Gemfile`, if not follow the instructions [Setting up your G
 Create the `Gemfile`
 
     source "https://rubygems.org"
-    
+
     # Hello! This is where you manage which Jekyll version is used to run.
     # When you want to use a different version, change it below, save the
     # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -67,19 +67,19 @@ Create the `Gemfile`
     # This will help ensure the proper Jekyll version is running.
     # Happy Jekylling!
     #gem "jekyll", "3.5.1"
-    
+
     # This is the default theme for new Jekyll sites. You may change this to anything you like.
     gem "minima", "~> 2.0"
-    
+
     # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
     # uncomment the line below. To upgrade, run `bundle update github-pages`.
     gem "github-pages", group: :jekyll_plugins
-    
+
     # If you have any plugins, put them here!
     group :jekyll_plugins do
        gem "jekyll-feed", "~> 0.6"
     end
-    
+
     # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
     gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -92,11 +92,7 @@ Keeping your site up to date with the GitHub Pages gem
     $ bundle update
 
 Launch jekyll pages
-    
+
     ~/jekyll-site $ bundle exec jekyll serve --host 192.168.33.10
 
 On the host computer open in a browser http://192.168.33.10:4000/
-
-
-
-
