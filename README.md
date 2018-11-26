@@ -1,4 +1,4 @@
-# Jekyll on Ubuntu Xenial (v16.04 LTS)
+# Jekyll on Ubuntu 18.04 LTS (Bionic Beaver)
 
 **WARNING** The first time starting this vagrant image takes about 7 minutes.
 
